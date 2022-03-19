@@ -14,8 +14,22 @@ Source0:	http://hackage.haskell.org/package/%{pkgname}-%{version}/%{pkgname}-%{v
 # Source0-md5:	2285d0dc5d5810b92a48a7f0576affe4
 URL:		http://hackage.haskell.org/package/Glob
 BuildRequires:	ghc >= 6.12.3
+BuildRequires:	ghc-base >= 4
+BuildRequires:	ghc-containers
+BuildRequires:	ghc-directory
+BuildRequires:	ghc-dlist >= 0.4
+BuildRequires:	ghc-filepath >= 1.1
+BuildRequires:	ghc-transformers >= 0.2
+BuildRequires:	ghc-transformers-compat >= 0.3
 %if %{with prof}
 BuildRequires:	ghc-prof
+BuildRequires:	ghc-base-prof >= 4
+BuildRequires:	ghc-containers-prof
+BuildRequires:	ghc-directory-prof
+BuildRequires:	ghc-dlist-prof >= 0.4
+BuildRequires:	ghc-filepath-prof >= 1.1
+BuildRequires:	ghc-transformers-prof >= 0.2
+BuildRequires:	ghc-transformers-compat-prof >= 0.3
 %endif
 BuildRequires:	rpmbuild(macros) >= 1.608
 %requires_eq	ghc
